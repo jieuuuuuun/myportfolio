@@ -3,8 +3,13 @@ const theme = {};
 
 theme.PALLETE = {
     primary: {
-        main: "#ffd159",
-        sub: "#fff4d8",
+        main:"#050a13",
+        sub: "#1b1e26;",
+        
+    },
+    accent: {
+        main:"#03e8f9;",
+        sub: "#fd6413;"
     },
     secondary: "#f1ebf5",
     white: "#fff",

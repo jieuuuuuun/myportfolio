@@ -57,11 +57,11 @@ S.HomeContact = styled.a`
   font-weight: bold;
   border-radius: 4px;
 
-&:hover {
+  &:hover {
     background-color: transparent;
     color: #ffffff;
     outline: 2px solid #03e8f9;
   }
-`
+`;
 
 export default S;

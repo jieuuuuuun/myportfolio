@@ -1,17 +1,14 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import Home from './Home';
-// import About from './About';
-// import Skills from './Skills';
-// import Work from './Work';
+import Home from './home/Home';
+import About from './about/About';
+
 
 const MainContainer = () => {
   return (
     <div>
       <Home />
-      {/* <About />
-      <Skills />
-      <Work /> */}
+      <About />
       {/* <Link to={"/docs"}>documentation</Link> */}
     </div>
   );

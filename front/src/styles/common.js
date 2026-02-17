@@ -46,3 +46,4 @@ export const h1Medium = css`
   line-height: ${({theme}) => theme.FONT_LINE["h1"]};
   font-weight: ${({theme}) => theme.FONT_WEIGHT["Medium"]};
 `
+
