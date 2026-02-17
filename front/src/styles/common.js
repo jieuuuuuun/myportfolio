@@ -1,6 +1,21 @@
 // 공통적인 css를 변수에 담아 사용할 수 있도록 제공하는 파일
 import { css } from "styled-components";
 
+export const section = css`
+  padding: 4rem;
+  text-align: center;
+`;
+
+export const title = css`
+  font-size: 2.5rem;
+  margin: 1rem 0;
+`;
+
+export const description = css`
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+`;
+
 export const flexCenter = css`
   display: flex;
   justify-content: center;

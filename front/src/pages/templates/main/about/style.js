@@ -1,21 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
+import { description, section, title } from "../../../../styles/common";
 
 const S = {};
 
 S.Section = styled.div`
-  padding: 4rem;
-  text-align: center;
+  ${section}
 `;
 
 S.Title = styled.h2`
-  font-size: 2.5rem;
-  margin: 1rem 0;
+  ${title}
 `;
 
 S.Description = styled.p`
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
+  ${description}
 `;
 
 S.Majors = styled.div`
