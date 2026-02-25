@@ -28,16 +28,16 @@ S.Majors = styled.div`
 S.MajorIcon = styled(FontAwesomeIcon)`
   font-size: 4rem;
   margin: 1rem 0;
-  /* color: var(--color-accent); */
+  color: ${({theme}) => theme.PALETTE.accent["main"]};
   transition: all 300ms ease;
   font-weight: 400;
 `;
 
 S.Major = styled.div`
   width: 100%;
-  background-color: blueviolet;
+  background-color: ${({theme}) => theme.PALETTE.primary["variant"]};
   padding: 2rem 1rem;
-  /* color: var(--color-text); */
+  color: ${({theme}) => theme.PALETTE.white};
   border-radius: 1rem;
   cursor: default;
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
@@ -64,11 +64,11 @@ S.Job = styled.li`
   margin-bottom: 1rem;
 `;
 S.JobName = styled.p`
-  /* color: var(--color-primary); */
+  color: ${({theme}) => theme.PALETTE.primary["main"]};
 `;
 
 S.JobPeriod = styled.p`
-  /* color: var(--color-primary); */
+  color: ${({theme}) => theme.PALETTE.primary["main"]};
   font-size: 0.8rem;
 `;
 
