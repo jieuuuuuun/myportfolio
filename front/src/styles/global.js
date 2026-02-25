@@ -1,7 +1,7 @@
 // 전역에 사용되는 스타일을 적용시키기위한 파일
 // 폰트, 리셋
-import { createGlobalStyle } from 'styled-components'
-import {reset} from 'styled-reset'
+import { createGlobalStyle } from "styled-components";
+import { reset } from "styled-reset";
 
 const GlobalStyle = createGlobalStyle`
   /* css 스타일 리셋 */
@@ -91,24 +91,7 @@ const GlobalStyle = createGlobalStyle`
     font-display: swap;
   }
 
-  /* body {
-    font-family: 'pretendard';
-    font-weight: 900;
-    box-sizing: border-box;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
-    letter-spacing: -0.2px;
-    text-decoration: none;
-    color: #131313;
-    line-height: 1.3;
-  }
-
-  button {
-    cursor: pointer;
-    border: none;
-  } */
-
   * {
-    font-family: 'pretendard';
     box-sizing: border-box;
   }
 
@@ -117,7 +100,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'pretendard','Open Sans', sans-serif;
       margin: 0;
   }
 
@@ -149,5 +132,5 @@ const GlobalStyle = createGlobalStyle`
       outline: 1px solid transparent;
   }
 
-`
+`;
 export default GlobalStyle;

@@ -17,8 +17,8 @@ S.Description = styled.p`
 
 S.SkillsContainer = styled(S.Section)`
   position: relative;
-  /* background-color: var(--color-primary-variant); */
-  /* color: var(--color-text); */
+  background-color: ${({theme}) => theme.PALETTE.primary["variant"]};
+  color: ${({theme}) => theme.PALETTE.white};
 
   &::after {
     content: "";
@@ -30,9 +30,9 @@ S.SkillsContainer = styled(S.Section)`
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    /* background-color: var(--color-primary); */
-    /* mask: var(--divider-multi-wave); */
-    /* -webkit-mask: var(--divider-multi-wave); */
+    background-color: ${({theme}) => theme.PALETTE.primary["main"]};
+    mask: ${({theme}) => theme.MASK.divider["multi"]};
+    -webkit-mask: ${({theme}) => theme.MASK.divider["multi"]};
   }
 `;
 
@@ -52,7 +52,7 @@ S.Skills = styled.section`
 `;
 
 S.SkillsTitle = styled.h3`
-  color: var(--color-accent);
+  color: ${({theme}) => theme.PALETTE.accent["main"]};
   margin: 1rem 0;
   font-size: 1.2rem;
 `;
@@ -60,7 +60,7 @@ S.SkillsTitle = styled.h3`
 S.SkillsCoding = styled.section`
   grid-row: span 2;
   padding: 1rem;
-  background-color: var(--color-primary);
+  background-color: ${({theme}) => theme.PALETTE.primary["main"]};
 `;
 
 S.SkillsTools = styled.section`
@@ -69,7 +69,7 @@ S.SkillsTools = styled.section`
 
 S.SkillsEtc = styled.section`
   padding: 1rem;
-  /* background-color: var(--color-primary); */
+  background-color: ${({theme}) => theme.PALETTE.primary["main"]};
   filter: brightness(150%);
 `;
 
@@ -88,13 +88,12 @@ S.BarMetadata = styled.div`
 S.BarBg = styled.div`
   width: 100%;
   height: 3px;
-  /* background-color: var(--color-primary-variant); */
+  background-color: ${({theme}) => theme.PALETTE.primary["variant"]};
 `;
 S.BarValue = styled.div`
   height: 3px;
   width: ${({width}) => width};
-  background-color:blue;
-  /* background-color: var(--color-accent); */
+  background-color: ${({theme}) => theme.PALETTE.accent["main"]};
 `;
 
 export default S;
