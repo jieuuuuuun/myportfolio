@@ -1,113 +1,58 @@
 import React from "react";
+import S from "./style";
 
 const Projects = () => {
   return (
-    <ul class="projects">
-      <li class="project" data-type="front-end">
+    <S.Projects>
+      <S.Project data-type="front-end">
         <a href="#" target="_blank">
-          <img
-            src="images/projects/project1.webp"
+          <S.ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/project/project1.webp`}
             alt="project1"
-            class="project__img"
           />
-          <div class="project__metadata">
-            <h3 class="project__title">Project #1</h3>
+          <S.ProjectMetadata>
+            <S.ProjectTitle>Project #1</S.ProjectTitle>
             <p>Clone Coding with HTML, CSS</p>
-          </div>
+          </S.ProjectMetadata>
         </a>
-      </li>
-      <li class="project" data-type="front-end">
+      </S.Project>
+      <S.Project data-type="front-end">
         <a href="#" target="_blank">
-          <img
-            src="images/projects/project2.webp"
+          <S.ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/project/project2.webp`}
             alt="project2"
-            class="project__img"
           />
-          <div class="project__metadata">
-            <h3 class="project__title">Project #2</h3>
+          <S.ProjectMetadata>
+            <S.ProjectTitle>Project #2</S.ProjectTitle>
             <p>Clone Coding with HTML, CSS</p>
-          </div>
+          </S.ProjectMetadata>
         </a>
-      </li>
-      <li class="project" data-type="front-end">
+      </S.Project>
+      <S.Project data-type="front-end">
         <a href="#" target="_blank">
-          <img
-            src="images/projects/project3.webp"
+          <S.ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/project/project3.webp`}
             alt="project3"
-            class="project__img"
           />
-          <div class="project__metadata">
-            <h3 class="project__title">Project #3</h3>
+          <S.ProjectMetadata>
+            <S.ProjectTitle>Project #3</S.ProjectTitle>
             <p>Clone Coding with HTML, CSS</p>
-          </div>
+          </S.ProjectMetadata>
         </a>
-      </li>
-      <li class="project" data-type="back-end">
+      </S.Project>
+      <S.Project data-type="back-end">
         <a href="#" target="_blank">
-          <img
-            src="images/projects/project4.webp"
+          <S.ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/project/project4.webp`}
             alt="project4"
-            class="project__img"
           />
-          <div class="project__metadata">
-            <h3 class="project__title">Project #4</h3>
+          <S.ProjectMetadata>
+            <S.ProjectTitle>Project #4</S.ProjectTitle>
             <p>Clone Coding with HTML, CSS</p>
-          </div>
+          </S.ProjectMetadata>
         </a>
-      </li>
-      <li class="project" data-type="back-end">
-        <a href="#" target="_blank">
-          <img
-            src="images/projects/project5.webp"
-            alt="project5"
-            class="project__img"
-          />
-          <div class="project__metadata">
-            <h3 class="project__title">Project #5</h3>
-            <p>Clone Coding with HTML, CSS</p>
-          </div>
-        </a>
-      </li>
-      <li class="project" data-type="mobile">
-        <a href="#" target="_blank">
-          <img
-            src="images/projects/project6.webp"
-            alt="project6"
-            class="project__img"
-          />
-          <div class="project__metadata">
-            <h3 class="project__title">Project #6</h3>
-            <p>Clone Coding with HTML, CSS</p>
-          </div>
-        </a>
-      </li>
-      <li class="project" data-type="mobile">
-        <a href="#" target="_blank">
-          <img
-            src="images/projects/project7.webp"
-            alt="project7"
-            class="project__img"
-          />
-          <div class="project__metadata">
-            <h3 class="project__title">Project #7</h3>
-            <p>Clone Coding with HTML, CSS</p>
-          </div>
-        </a>
-      </li>
-      <li class="project" data-type="front-end">
-        <a href="#" target="_blank">
-          <img
-            src="images/projects/project8.webp"
-            alt="project8"
-            class="project__img"
-          />
-          <div class="project__metadata">
-            <h3 class="project__title">Project #8</h3>
-            <p>Clone Coding with HTML, CSS</p>
-          </div>
-        </a>
-      </li>
-    </ul>
+      </S.Project>
+    </S.Projects>
   );
 };
 
