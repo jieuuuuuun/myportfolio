@@ -5,10 +5,11 @@ import About from './about/About';
 
 
 const MainContainer = () => {
+  const aboutTitle = "About me"
   return (
     <div>
       <Home />
-      <About />
+      <About aboutTitle={aboutTitle}/>
       {/* <Link to={"/docs"}>documentation</Link> */}
     </div>
   );
