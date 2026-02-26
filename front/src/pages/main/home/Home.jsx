@@ -1,7 +1,7 @@
 import React from "react";
 import S from "./style";
 
-const Home = () => {
+const Home = ({name, homeTitle}) => {
   return (
     <div>
       <S.Home>
@@ -12,7 +12,7 @@ const Home = () => {
           />
           <S.HomeTitle aria-label="Hello, I'm Dream Coder jieun">
             Hello I&#39;m{" "}
-            <strong>Dream Coder</strong>, Jieun
+            <strong>{homeTitle}</strong>, {name}
           </S.HomeTitle>
           <S.HomeDescription>
             A software engineer currently residing in 서울, Australia
