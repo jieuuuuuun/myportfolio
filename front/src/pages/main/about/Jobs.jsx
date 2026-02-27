@@ -1,19 +1,18 @@
-import React from 'react';
-import S from './style';
+import React from "react";
+import S from "./style";
 
-const Jobs = () => {
+const Jobs = ({ name, period, logo: { imgName, imgAlt } }) => {
   return (
-    <div>
-      <S.Jobs>
-          <S.Job>
-            <S.Img src={`${process.env.PUBLIC_URL}/assets/images/boslogo.png`} alt="bos logo" />
-            <div>
-              <S.JobName>개발팀</S.JobName>
-              <S.JobPeriod>2023 - 2025 비오에스 솔루션 홈페이지 개발</S.JobPeriod>
-            </div>
-          </S.Job>
-        </S.Jobs>
-    </div>
+    <S.Job>
+      <S.Img
+        src={`${process.env.PUBLIC_URL}/assets/images/${imgName}`}
+        alt={imgAlt}
+      />
+      <div>
+        <S.JobName>{name}</S.JobName>
+        <S.JobPeriod>{period}</S.JobPeriod>
+      </div>
+    </S.Job>
   );
 };
 
