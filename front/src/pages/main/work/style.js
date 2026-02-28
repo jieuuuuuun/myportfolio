@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { description, section, title } from "../../../../styles/common";
+import { description, section, title } from "../../../styles/common";
 
 const S = {};
 

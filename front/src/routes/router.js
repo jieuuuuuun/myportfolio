@@ -1,14 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import MyTestNotFound from "../pages/templates/mytestnotfound/MyTestNotFound";
 // import MyTestLayout from "../pages/templates/mytestlayout/MyTestLayout";
-import MyTestMainContainer from "../pages/templates/mytestmain/MyTestMainContainer";
 import MyTestContextContainer from "../pages/templates/mytestcontext/MyTestContextContainer";
 import MyTestDocs from "../pages/templates/mytestdocs/MyTestDocs";
 import MyTestParameterRead from "../pages/templates/mytesturlparameter/MyTestParameterRead";
 import MyTestParameterContainer from "../pages/templates/mytesturlparameter/MyTestParameterContainer";
 import MyTestQueryStringRead from "../pages/templates/mytestquerystring/MyTestQueryStringRead";
 import MyTestQueryStringContainer from "../pages/templates/mytestquerystring/MyTestQueryStringContainer";
-import MainContainer from "../pages/templates/main/MainContainer";
+import MainContainer from "../pages/main/MainContainer";
 
 const router = createBrowserRouter([
   {
