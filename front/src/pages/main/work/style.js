@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { description, section, title } from "../../../styles/common";
 
 const S = {};
@@ -24,23 +24,6 @@ S.Categories = styled.ul`
   gap: 1rem;
 `;
 
-S.Category = styled.button`
-  position: relative;
-  color: ${({ theme }) => theme.PALETTE.white};
-  font-size: 1.1rem;
-  padding: 0.5rem 3rem;
-  border-radius: 4px;
-  border: 1px solid ${({ theme }) => theme.PALETTE.accent["main"]};
-  cursor: pointer;
-  white-space: nowrap;
-`;
-
-// ${({selected, theme}) =>
-//     $selected &&
-//     `background-color: ${({theme}) => theme.PALETTE.accent["main"]};
-//     color: ${({theme}) => theme.PALETTE.primary["main"]};`
-//     }
-
 S.CategoryCount = styled.span`
   opacity: 0;
   position: absolute;
@@ -55,11 +38,34 @@ S.CategoryCount = styled.span`
   transition: all 250ms ease-in;
 `;
 
-//  .category--selected .category__count,
-//  .category:hover .category__count {
-//     opacity: 1;
-//     top: 0;
-//  }
+S.Category = styled.button`
+  position: relative;
+  color: ${({ theme }) => theme.PALETTE.white};
+  font-size: 1.1rem;
+  padding: 0.5rem 3rem;
+  border-radius: 4px;
+  border: 1px solid ${({ theme }) => theme.PALETTE.accent["main"]};
+  cursor: pointer;
+  white-space: nowrap;
+
+  ${({ $isSelected, theme }) =>
+    $isSelected &&
+    css`
+      background-color: ${theme.PALETTE.accent["main"]};
+      color: ${theme.PALETTE.primary["main"]};
+
+      ${S.CategoryCount} {
+        opacity: 1;
+        top: 0;
+      }
+    `}
+
+  &:hover ${S.CategoryCount} {
+    opacity: 1;
+    top: 0;
+  }
+`;
+
 
 S.Projects = styled.ul`
   display: grid;
@@ -115,8 +121,8 @@ S.ProjectTitle = styled.h3`
     margin: 0.5rem 0;
     width: 50px;
     height: 2px;
-    background-color: ${({theme}) => theme.PALETTE.accent["main"]}
+    background-color: ${({ theme }) => theme.PALETTE.accent["main"]};
   }
-`
+`;
 
 export default S;
